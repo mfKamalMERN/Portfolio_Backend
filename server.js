@@ -10,7 +10,7 @@ const app = express()
 app.use(express.static('Public'))
 
 app.use(cors({
-    origin: ["https://portfolio-six-xi-63.vercel.app/"],
+    origin: ["http://localhost:3000", "http://localhost:3000/home", "http://localhost:3000/dashboard", "http://localhost:3000/uploadresume", "http://localhost:3000/uploadcertificates", "http://localhost:3000/allmarksheets"],
 
     methods: ["GET", "POST", "PUT", "DELETE"],
 
