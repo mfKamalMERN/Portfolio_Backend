@@ -5,6 +5,10 @@ import { validationResult } from "express-validator"
 
 export const EmployeeController = {
 
+    Home: (req, res) => {
+        res.json(`Server running`)
+    },
+
     Register: async (req, res) => {
         const { name, age, dob, email, password, maritalStatus, gender, role } = req.body
         try {

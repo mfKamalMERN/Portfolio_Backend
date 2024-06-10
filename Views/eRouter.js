@@ -6,6 +6,7 @@ import { AddQualificationValidation, LoginValidation } from '../Validations/Vali
 
 const eRouter = express.Router()
 
+eRouter.get('/', EmployeeController.Home)
 eRouter.post('/registerasemployee', EmployeeController.Register)
 
 eRouter.post('/login', LoginValidation, EmployeeController.Login)
